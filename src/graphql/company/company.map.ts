@@ -4,4 +4,5 @@ import to from 'await-to-js';
 
 export const CompanyMap = {
     users: resolver(Company.associations.users),
+    jobs: resolver(Company.associations.jobs),
 };

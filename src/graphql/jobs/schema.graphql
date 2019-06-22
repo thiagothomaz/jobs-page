@@ -1,0 +1,21 @@
+type Job {
+  id: Int
+  name: String
+  company: Company
+}
+
+input JobWhere {
+  id: Int
+}
+
+input JobInput {
+    name: String
+}
+
+type Query {
+   getJob(where: JobWhere, limit: Int, offset: Int): Job
+}
+
+type Mutation {
+   createJob(data: JobInput): Job
+}
